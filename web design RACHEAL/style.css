@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* The Main Container */
+.portal-wrapper {
+    display: flex;
+    width: 900px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Keeps the corners rounded */
+}
+
+/* Left Side: Branding (MUST Colors) */
+.brand-panel {
+    flex: 4;
+    background: linear-gradient(135deg, #0A3D72, #165a9c); /* MUST Blue */
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.brand-panel img {
+    width: 90px;
+    margin-bottom: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.brand-panel h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.brand-panel p {
+    font-size: 14px;
+    color: #d1e0f0;
+    margin-bottom: 30px;
+}
+
+.badge {
+    background-color: #F1C40F; /* MUST Gold */
+    color: #0A3D72;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Right Side: Forms */
+.form-panel {
+    flex: 6;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-panel h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.form-panel p.subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0A3D72;
+    box-shadow: 0 0 5px rgba(10, 61, 114, 0.2);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0A3D72;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #F1C40F;
+    color: #0A3D72;
+}
+
+.links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+.links a {
+    color: #0A3D72;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
